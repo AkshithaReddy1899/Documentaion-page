@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!--main css-->
+    <link href="dist/css/main.css" rel="stylesheet">
+    <link href="assets/bootstrap-logo.png" rel="shortcut icon">
+
+    <title>Documentation page</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#sidebarMenu">
+    <header>
+        <nav class="main-nav navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="assets/bootstrap-logo.png" alt="icon" style="width: 30px; height: auto;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg></div>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="documentation.html">Docs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Examples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Icons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Themes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="btn">
+                        <button type="button" class="nav-down-btn"><a href="download.html">Download</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--search bar-->
+        <nav class="navbar search-navbar">
+            <div class="container-fluid">
+                <form class="d-flex">
+                    <input type="search" class="search" placeholder="Search docs...">
+                </form>
+                <button class="sidebar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                      </svg></div>
+                  </button>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block navbar-light bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column nav nav-tabs" role="tablist">
+                        <li class="side-button">
+                            <button class="side-btn" type="button" data-bs-toggle="collapse" data-bs-target="#getting" aria-expanded="false" aria-controls="getting">Getting started</button>
+                            <!--getting started sub-list-->
+                            <div class="collapse" id="getting">
+                                <ol class="side-list list-unstyled pb-1 small sub-list-ul">
+                                    <li class="side-item"><a href="documentation.html" class="d-inline-flex align-items-center rounded">Introduction</a></li>
+                                    <li class="side-item"><a href="download.html" class="d-inline-flex align-items-center rounded">Download</a></li>
+                                    <li class="side-item"><a href="https://getbootstrap.com/docs/5.0/getting-started/contents/" class="d-inline-flex align-items-center rounded">Contents</a></li>
+                                    <li class="side-item"><a href="https://getbootstrap.com/docs/5.0/getting-started/browsers-devices/" class="d-inline-flex align-items-center rounded">Browsers & devices</a></li>
+                                    <li class="side-item"><a href="https://getbootstrap.com/docs/5.0/getting-started/javascript/" class="d-inline-flex align-items-center rounded">JavaScript</a></li>
+                                    <li class="side-item"><a href="https://getbootstrap.com/docs/5.0/getting-started/build-tools/" class="d-inline-flex align-items-center rounded">Build tools</a></li>
+                                    <li class="side-item"><a href="https://getbootstrap.com/docs/5.0/getting-started/webpack/" class="d-inline-flex align-items-center rounded">Webpack</a></li>
+                                    <li class="side-item"><a href="https://getbootstrap.com/docs/5.0/getting-started/accessibility/" class="d-inline-flex align-items-center rounded">Accessibility</a></li>
+                                    <li class="side-item"><a href="https://getbootstrap.com/docs/5.0/getting-started/rfs/" class="d-inline-flex align-items-center rounded">RFS</a></li>
+                                    <li class="side-item"><a href="https://getbootstrap.com/docs/5.0/getting-started/rtl/" class="d-inline-flex align-items-center rounded">RTL</a></li>
+                                </ol>
+                            </div>
+                        </li>
+                        <!--customize-->
+                        <li class="side-button">
+                            <button class="side-btn" type="button" data-bs-toggle="collapse" data-bs-target="#custom" aria-expanded="false" aria-controls="custom">Customize</button>
+                            <!--customize sublist-->
+                            <div class="collapse" id="custom">
+                                <ol class="side-list list-unstyled pb-1 small sub-list-ul">
+                                    <li class="side-item"><a href="https://getbootstrap.com/docs/5.0/customize/overview/" class="d-inline-flex align-items-center rounded" aria-current="page">Overview</a></li>
+                                    <li class="side-item"><a href="https://getbootstrap.com/docs/5.0/customize/sass/" class="d-inline-flex align-items-center rounded">Sass</a></li>
+                                    <li class="side-item"><a href="https://getbootstrap.com/docs/5.0/customize/options/" class="d-inline-flex align-items-center rounded ">Options</a></li>
+                                    <li class="side-item "><a href="https://getbootstrap.com/docs/5.0/customize/color/" class="d-inline-flex align-items-center rounded ">Color</a></li>
+                                    <li class="side-item "><a href="https://getbootstrap.com/docs/5.0/customize/components/" class="d-inline-flex align-items-center rounded ">Components</a></li>
+                                    <li class="side-item "><a href="https://getbootstrap.com/docs/5.0/customize/css-variables/" class="d-inline-flex align-items-center rounded ">Css variables</a></li>
+                                    <li class="side-item"><a href="https://getbootstrap.com/docs/5.0/customize/optimize/" class="d-inline-flex align-items-center rounded ">Optimize</a></li>
+                                </ol>
+                            </div>
+                        </li>
+                        <!--layout-->
+                        <li><button class="side-btn" type="button" data-bs-toggle="collapse" data-bs-target="#layout" aria-expanded="false" aria-controls="layout">Layout</button>
+                            <!--layout sub-list-->
+                            <div class="collapse" id="layout">
+                                <ol class="side-list list-unstyled pb-1 small sub-list-ul">
+                                    <li class="side-item">
+                                        <a href="breakpoint.html" class="d-inline-flex align-items-center rounded">Breakpoints</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="container.html" class="d-inline-flex align-items-center rounded">Containers</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="grid.html" class="d-inline-flex align-items-center rounded">Grid</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="columns.html" class="d-inline-flex align-items-center rounded">Columns</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="gutters.html" class="d-inline-flex align-items-center rounded">Gutters</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/layout/utilities/" class="d-inline-flex align-items-center rounded">Utilities</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/layout/z-index/" class="d-inline-flex align-items-center rounded">Z-index</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <!--content-->
+                        <li><button class="side-btn" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-expanded="false" aria-controls="content">Content</button>
+                            <!--content sub-list-->
+                            <div class="collapse" id="content">
+                                <ol class="side-list list-unstyled pb-1 small sub-list-ul">
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/content/reboot/" class="d-inline-flex align-items-center rounded">Reboot</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="typography.html" class="d-inline-flex align-items-center rounded">Typography</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="images.html" class="d-inline-flex align-items-center rounded">Images</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="tables.html" class="d-inline-flex align-items-center rounded">Tables</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="figures.html" class="d-inline-flex align-items-center rounded">Figures</a>
+                                    </li>
+                                </ol>
+
+                            </div>
+                        </li>
+                        <!--forms-->
+                        <li><button class="side-btn" type="button" data-bs-toggle="collapse" data-bs-target="#forms" aria-expanded="false" aria-controls="forms">Forms</button>
+                            <!--Forms sub-list-->
+                            <div class="collapse" id="forms">
+                                <ol class="side-list list-unstyled pb-1 small sub-list-ul">
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/forms/overview/" class="d-inline-flex align-items-center rounded">Overview</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/forms/form-control/" class="d-inline-flex align-items-center rounded">Form control</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/forms/select/" class="d-inline-flex align-items-center rounded">Select</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/forms/checks-radios/" class="d-inline-flex align-items-center rounded">Checks & radios</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/forms/range/" class="d-inline-flex align-items-center rounded">Range</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/forms/input-group/" class="d-inline-flex align-items-center rounded">Input group</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/forms/floating-labels/" class="d-inline-flex align-items-center rounded">Floating labels</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/forms/layout/" class="d-inline-flex align-items-center rounded">Layout</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/forms/validation/" class="d-inline-flex align-items-center rounded">Validation</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <!--components-->
+                        <li><button class="side-btn" type="button" data-bs-toggle="collapse" data-bs-target="#components" aria-expanded="false" aria-controls="components">Components</button>
+                            <!--components sub-list-->
+                            <div class="collapse" id="components">
+                                <ol class="side-list list-unstyled pb-1 small sub-list-ul">
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/accordion/" class="d-inline-flex align-items-center rounded">Accordion</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/alerts/" class="d-inline-flex align-items-center rounded">Alerts</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/badge/" class="d-inline-flex align-items-center rounded">Badge</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/breadcrumb/" class="d-inline-flex align-items-center rounded">Breadcrumb</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="buttons.html" class="d-inline-flex align-items-center rounded">Buttons</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/button-group/" class="d-inline-flex align-items-center rounded">Button group</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="card.html" class="d-inline-flex align-items-center rounded">Card</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="carousel.html" class="d-inline-flex align-items-center rounded">Carousel</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/close-button/" class="d-inline-flex align-items-center rounded">Close button</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="collapse.html" class="d-inline-flex align-items-center rounded">Collapse</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="dropdowns.html" class="d-inline-flex align-items-center rounded">Dropdowns</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="list.html" class="d-inline-flex align-items-center rounded">List group</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/modal/" class="d-inline-flex align-items-center rounded">Modal</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/navs-tabs/" class="d-inline-flex align-items-center rounded">Navs & tabs</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="navbar.html" class="d-inline-flex align-items-center rounded">Navbar</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/pagination" class="d-inline-flex align-items-center rounded">Pagination</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/popovers/" class="d-inline-flex align-items-center rounded">Popovers</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/progress/" class="d-inline-flex align-items-center rounded">Progress</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/scrollspy/" class="d-inline-flex align-items-center rounded">Scrollspy</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/spinners/" class="d-inline-flex align-items-center rounded">Spinners</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/toasts/" class="d-inline-flex align-items-center rounded">Toasts</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/components/tooltips/" class="d-inline-flex align-items-center rounded">Tooltips</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <!--Helpers-->
+                        <li><button class="side-btn" type="button" data-bs-toggle="collapse" data-bs-target="#helpers" aria-expanded="false" aria-controls="helpers">Helpers</button>
+                            <!--helpers sub-list-->
+                            <div class="collapse" id="helpers">
+                                <ol class="side-list list-unstyled pb-1 small sub-list-ul">
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/helpers/clearfix/" class="d-inline-flex align-items-center rounded">Clearfix</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/helpers/colored-links/" class="d-inline-flex align-items-center rounded">Colored links</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/helpers/ratio/" class="d-inline-flex align-items-center rounded">Ratio</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/helpers/position/" class="d-inline-flex align-items-center rounded">Position</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/helpers/visually-hidden/" class="d-inline-flex align-items-center rounded">Visually hidden</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/helpers/stretched-link/" class="d-inline-flex align-items-center rounded">Stretched link</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/helpers/text-truncation/" class="d-inline-flex align-items-center rounded">Text truncation</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <!--utility-->
+                        <li><button class="side-btn" type="button" data-bs-toggle="collapse" data-bs-target="#utilities" aria-expanded="false" aria-controls="utilities">Utilities</button>
+                            <!--utilities sub-list-->
+                            <div class="collapse" id="utilities">
+                                <ol class="side-list list-unstyled pb-1 small sub-list-ul">
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/api/" class="d-inline-flex align-items-center rounded">API</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/background/" class="d-inline-flex align-items-center rounded">Background</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/borders/" class="d-inline-flex align-items-center rounded">Borders</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/colors/" class="d-inline-flex align-items-center rounded">Colors</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/display/" class="d-inline-flex align-items-center rounded">Display</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/flex/" class="d-inline-flex align-items-center rounded">Flex</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/float/" class="d-inline-flex align-items-center rounded">Float</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/interactions/" class="d-inline-flex align-items-center rounded">Interactions</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/overflow/" class="d-inline-flex align-items-center rounded">Overflow</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/positions/" class="d-inline-flex align-items-center rounded">Position</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/shadows/" class="d-inline-flex align-items-center rounded">Shadows</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/sizing/" class="d-inline-flex align-items-center rounded">Sizing</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/spacing/" class="d-inline-flex align-items-center rounded">Spacing</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/text/" class="d-inline-flex align-items-center rounded">Text</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/vertical-align/" class="d-inline-flex align-items-center rounded">Vertical align</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/utilities/visibility/" class="d-inline-flex align-items-center rounded">Visibility</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <!--extend-->
+                        <li><button class="side-btn" type="button" data-bs-toggle="collapse" data-bs-target="#extend" aria-expanded="false" aria-controls="extend">Extend</button>
+                            <!--extend sub-list-->
+                            <div class="collapse" id="extend">
+                                <ol class="side-list list-unstyled pb-1 small sub-list-ul">
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/extend/approach/" class="d-inline-flex align-items-center rounded">Approach</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/extend/icons/" class="d-inline-flex align-items-center rounded">Icons</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <!--about-->
+                        <li><button class="side-btn" type="button" data-bs-toggle="collapse" data-bs-target="#about" aria-expanded="false" aria-controls="about">About</button>
+                            <!--about sub-list-->
+                            <div class="collapse" id="about">
+                                <ol class="side-list list-unstyled pb-1 small sub-list-ul">
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/about/overview/" class="d-inline-flex align-items-center rounded">Overview</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/about/team/" class="d-inline-flex align-items-center rounded">Team</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/about/brand/" class="d-inline-flex align-items-center rounded">Brand</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/about/license/" class="d-inline-flex align-items-center rounded">License</a>
+                                    </li>
+                                    <li class="side-item">
+                                        <a href="https://getbootstrap.com/docs/5.0/about/translations/" class="d-inline-flex align-items-center rounded">Translations</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <hr/><a href="https://getbootstrap.com/docs/5.0/migration/" class="side-list side-btn migration ">Migration</a>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="col-lg-10 doc-col col-md-9 main-content">
+                <article class="main-section" id="intro">
+                    <div class="data-main-heading data-main-item">
+                        <h1>Introduction</h1>
+                        <p>Get started with Bootstrap, the world's most popular framework for building responsive, mobile-first sites, with jsDelivr and a template starter page.</p>
+                    </div>
+                    <div class="quick data-main-item">
+                        <h2>Quick start</h2>
+                        <p>Looking to quickly add Bootstrap to your project? Use jsDelivr, a free open source CDN. Using a package manager or need to download the source files? <a href="download.html">Head to the downloads page</a>
+                        </p>
+                    </div>
+                    <div class="css data-main-item">
+                        <h3>CSS</h3>
+                        <p>Copy-paste the stylesheet <code>link</code> into your <code>head</code> before all other stylesheets to load our CSS.<br>
+                            <div class="highlight"> <code>
+																									&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css " rel="stylesheet " integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl " crossorigin="anonymous "&gt;</code></div>
+                        </p>
+                    </div>
+                    <div class="js data-main-item">
+                        <h3>JS</h3>
+                        <p>Many of our components require the use of JavaScript to function. Specifically, they require our own JavaScript plugins and <a href="https://popper.js.org/">Popper</a>.Place <b>one of the following <code>script</code>s</b> near
+                            the end of your pages, right before the closing <code>/body</code> tag, to enable them.</p>
+                    </div>
+                    <div class="bundle data-main-item">
+                        <h3>Bundle</h3>
+                        <p>Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both <code>bootstrap.bundle.js</code> and <code>bootstrap.bundle.min.js</code> include <a href="https://popper.js.org/">Popper</a> for our tooltips
+                            and popovers. For more information about what's included in Bootstrap, please see our <a href="https://getbootstrap.com/docs/5.0/getting-started/contents/#precompiled-bootstrap">contents</a> section.
+                            <div class="highlight">
+                                <code><br>
+																									&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"&gt;</script></code></div>
+                        </p>
+                    </div>
+                    <div class="separate data-main-item">
+                        <h4>Separate</h4>
+                        <p>If you decide to go with the separate scripts solution, Popper must come first(if you're using tooltips or popovers), and then our JavaScript plugins.
+                            <div class="highlight"><code>
+																									&lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"&gt&lt/script&gt;<br>&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"&gt;&lt;/script&gt;</code></div>
+                        </p>
+                    </div>
+                    <div class="components data-main-item">
+                        <h4>Components</h4>
+                        <p>Curious which components explicitly rewuire our JavaScript and Popper? Click the show components link below. If you're at all unsure about the general page structure, keep reading for an example page template.</p>
+                        <details>
+                            <summary>Show components requiring JavaScript</summary>
+                            <ul>
+                                <li>Alerts for dismissing</li>
+                                <li>Buttons for toggling states and checkbox/radio functionality</li>
+                                <li>Carousel for all slide behaviors, controls, and indicators</li>
+                                <li>Collapse for toggling visibility of content</li>
+                                <li>Dropdowns for displaying and positioning (also requires <a href="https://popper.js.org/">Popper</a>)</li>
+                                <li>Modals for displaying, positioning, and scroll behavior</li>
+                                <li>Navbar for extending our Collapse plugin to implement responsive behavior</li>
+                                <li>Toasts for displaying and dismissing</li>
+                                <li>Tooltips and popovers for displaying and positioning (also requires<a href="https://popper.js.org/">Popper</a>)
+                                </li>
+                                <li>Scrollspy for scroll behavior and navigation updates</li>
+                            </ul>
+                        </details>
+                    </div>
+                    <div class="starter data-main-item">
+                        <h3>Starter template</h3>
+                        <p>Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviours. Put it all together and your pages should
+                            look like this:
+                            <div class="highlight data-main-item">
+                                <code><br>
+																									&lt;!doctype html&gt;<br>
+																									&lt;html lang="en"&gt;<br>
+																									&lt;head&gt;<br>
+																									&lt;!-- Required meta tags --&gt;<br>
+																									&lt;meta charset="utf-8"&gt;<br>
+																									&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+																									&lt;!-- Bootstrap CSS --&gt;<br>
+																									&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"&gt;<br>
+																									&lt;title&gt;Hello, world!&lt;/title&gt;<br>
+																									&lt;/head&gt;<br>
+																									&lt;body&gt;<br>
+																									&lt;h1&gt;Hello, world!&lt;/h1&gt;<br>
+																									&lt;!-- Optional JavaScript; choose one of the two! --&gt;<br>
+																									&lt;!-- Option 1: Bootstrap Bundle with Popper --&gt;<br>
+																									&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"&gt;&lt;/script&gt;<br>
+																									&lt;!-- Option 2: Separate Popper and Bootstrap JS --&gt;<br>
+																									&lt;!--<br>
+																									&lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"&gt;&lt;/script&gt;<br>
+																									&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"&gt;&lt;/script&gt;<br>
+																									--&gt;<br>
+																									&lt;/body&gt;<br>
+																									&lt;/html&gt;<br>
+																								</code></div> That's all you need for overall page requirements. Visit the <a href="grid.html">Layout docs</a> or <a href="https://getbootstrap.com/docs/5.0/examples/">our official examples</a> to
+                            start laying out your site's content and components.
+                        </p>
+                    </div>
+                    <div class="data-main-item">
+                        <h2>Important globals</h2>
+                        <p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s dive in.</p>
+                    </div>
+                    <div class="data-main-item">
+                        <h2>HTML5 doctype</h2>
+                        <p>Bootstrap requires the use of the HTML5 doctype. Without it, you'll see some funky incomplete styling, but including it shouldn't cause any considerable hiccups.
+                            <div class="highlight">
+                                <code>&lt;!doctype html&gt;<br>&lt;html lang="en"&gt;<br>...<br>&lt;html&gt;</code>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="data-main-item">
+                        <h3>Responsive meta tag</h3>
+                        <p>Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices,
+                            <b>add the responsive viewport meta tag</b> to your
+                            <code>&lt;head&gt;</code>.</p>
+                        <div class="highlight">
+                            <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code>
+                        </div><br> You can see an example of this in action in the <a href="#starter">starter template</a>.
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+    <footer class="footer-content">
+        <div class="footer-info">
+            This is an attempt to recreate Bootstrap 5 official documentation page, please visit <a href="https://getbootstrap.com/">the site </a>for more and updated details.
+
+            <p>All the information given above is from the v5.0.0-beta2. please do remember that bootstrap releases new versions which mostly are similar with some updated changes of the older versions.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+
+</html>

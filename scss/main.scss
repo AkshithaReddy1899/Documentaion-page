@@ -1,0 +1,364 @@
+$primary-font: system-ui,
+-apple-system,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+"Liberation Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+//secondary-font
+$secondary-font: SFMono-Regular,
+Menlo,
+Monaco,
+Consolas,
+"Liberation Mono",
+"Courier New",
+monospace;
+//colors
+$primary-color:#7952B3;
+$download-color:#FFE484;
+$gradient-color:rgb(218, 218, 231);
+$footer-color: rgb(245, 244, 244);
+$side-background: rgba(76, 76, 121, 0.144);
+$sidefont-color:grey;
+$highlight-color: rgb(241, 241, 241);
+//general styling
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: $primary-font;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+//main nav styling
+.main-nav {
+    padding: 5px 10px;
+    background-color: $primary-color;
+    width: 100%;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    padding: 1%;
+    margin: 0%;
+    border: 5px solid rgb(199, 198, 198);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: white;
+    font-weight: 400;
+}
+
+//download nav btn
+.nav-down-btn {
+    margin: 0px 0px 0px 16px;
+    padding: 6px 12px;
+    color: $download-color;
+    outline: none;
+    border: 1px solid $download-color;
+    background: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.nav-down-btn a {
+    color: $download-color;
+}
+
+.nav-down-btn a:hover {
+    color: black;
+}
+
+.nav-down-btn:hover {
+    background: $download-color;
+}
+
+//main home page
+.main-body {
+    background: linear-gradient(160deg, $gradient-color, $gradient-color 5%, white 45%, white);
+}
+
+.home {
+    margin: 55px 30px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.home h1 {
+    font-size: 4rem;
+}
+
+.home p {
+    font-size: 1.5rem;
+}
+
+//why to use bootstrap 
+.home-section {
+    padding: 20px;
+    margin: 40px;
+    font-size: 1.2rem;
+}
+
+.home-section h2 {
+    font-size: 2rem;
+}
+
+.home-section ul {
+    margin: 100px auto 0 20px;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    outline: none;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #5a3a8a;
+}
+
+.btn-outline-secondary a {
+    color: grey;
+}
+
+.btn-outline-secondary a:hover,
+.btn-outline-secondary a:focus {
+    color: white;
+}
+
+//footer
+.main-footer {
+    font-size: 0.9rem;
+    padding: 20px;
+    text-align: center;
+    background: $footer-color;
+}
+
+//search bar
+.search-navbar {
+    border-bottom: 1px solid $gradient-color;
+    box-shadow: 0px 0px 5px $gradient-color;
+    background-color: rgb(255, 255, 255);
+}
+
+.search {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid $gradient-color;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+//sidebar
+.side-bar {
+    //width: 216px;
+    margin: 10px 10px 5px 0;
+    padding: 0;
+    background: white;
+}
+
+.side-btn {
+    color: $sidefont-color;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 4px 5px;
+    background: none;
+    outline: none;
+    border: none;
+    margin: 5px;
+}
+
+.side-btn:hover {
+    background-color: $side-background;
+    border-radius: 5px;
+}
+
+.side-btn:focus {
+    background-color: $side-background;
+    border: 1px solid rgb(103, 117, 179);
+    color: rgb(32, 32, 32);
+    border-radius: 5px;
+}
+
+.side-link,
+.side-item a {
+    text-decoration: none;
+    color: $sidefont-color;
+}
+
+.side-item {
+    padding: 5px;
+    margin: auto;
+}
+
+.side-item:hover {
+    background-color: $side-background;
+    border-radius: 5px;
+}
+
+//introduction
+.main-section {
+    line-height: 2.3rem;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin: 1rem;
+}
+
+.data-main-item {
+    padding: 10px 5px;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+.data-main-heading h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.data-main-heading p {
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+.highlight {
+    background-color: $highlight-color;
+    margin: 5px auto;
+    padding: 10px;
+    line-height: 1.2rem;
+}
+
+//footer
+.footer-content {
+    background-color: $highlight-color;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0;
+    margin: 0px;
+}
+
+.footer-info {
+    padding: 40px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+//breakpoint
+.table {
+    font-size: 1rem;
+}
+
+.table td {
+    padding: 0px;
+}
+
+//grid
+.pink {
+    color: pink;
+}
+
+.blue {
+    color: rgb(97, 97, 235);
+}
+
+.orange {
+    color: orange;
+}
+
+.pink-container {
+    background-color: pink;
+    border: 1px solid black;
+}
+
+.blue-container {
+    background-color: rgb(97, 97, 235);
+    border: 1px solid black;
+}
+
+.orange-container {
+    background-color: orange;
+    border: 1px solid black;
+}
+
+//container
+.example-container {
+    width: 80%;
+    height: 12rem;
+    padding: 10px;
+    margin: 20px;
+    background-color: plum
+}
+
+.example-container .col {
+    width: 60px;
+    height: 50px;
+    background: rgb(126, 89, 126);
+    color: white;
+}
+
+.container-example {
+    background: plum;
+    padding: 10px;
+}
+
+.container-example .col-4 {
+    background: rgb(126, 89, 126);
+    border: 1px solid white;
+    margin: 5px;
+    width: 12rem;
+    color: white;
+}
+
+.example-container .row {
+    width: 250px;
+    height: auto;
+    border: 1px solid black;
+}
+
+//images
+.img-container {
+    width: 250px;
+    height: 250px;
+    align-items: center;
+}
+
+
+/*
+@media screen and(min-width:767px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        background-color: white;
+    }
+}*/
