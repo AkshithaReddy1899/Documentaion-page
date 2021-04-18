@@ -223,6 +223,12 @@ button a {
     border-radius: 5px;
 }
 
+.sidebar-toggler {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
 //introduction
 .main-section {
     line-height: 2.3rem;
@@ -353,12 +359,11 @@ footer p {
     align-items: center;
 }
 
-
-/*
-@media screen and(min-width:767px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        background-color: white;
+@media screen and(max-width: 410px) {
+    .home h1 {
+        font-size: 2rem;
     }
-}*/
+    .btn {
+        margin: 5px;
+    }
+}
