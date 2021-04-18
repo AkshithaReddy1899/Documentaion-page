@@ -195,6 +195,12 @@ button a {
   border-radius: 5px;
 }
 
+.sidebar-toggler {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
 .main-section {
   line-height: 2.3rem;
   font-size: 1.1rem;
